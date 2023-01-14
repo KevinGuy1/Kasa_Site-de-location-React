@@ -1,0 +1,21 @@
+.footer{
+    background: black;
+    height: 209px;
+    max-width: 1440px;
+    margin: auto;
+    &__container{
+        padding-top: 66px;
+        height: 100%;
+    }
+    img{
+        height: 39.444419860839844px;
+        width: 122px;
+        display: flex;
+        margin: auto;
+    }
+    p{
+        color: white;
+        text-align: center;
+        padding-top: 25px;
+    }
+}

@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "../../pages/Home";
-import Logement from "../../pages/Logement.js";
+import About from "../../pages/About.js";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
-// une page erreur ? 
+import Error404 from "../../pages/Error404"
 
 const index = () => {
   return (
@@ -13,7 +13,8 @@ const index = () => {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route exact path="/fiche-logement" element={<Logement />} />
+          <Route exact path="/A-Propos" element={<About />} />
+          <Route path="*" element={<Error404 />} />
         </Routes>
         <Footer />
       </Router>
