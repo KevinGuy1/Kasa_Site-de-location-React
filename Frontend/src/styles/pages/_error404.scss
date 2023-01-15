@@ -1,4 +1,30 @@
 .error{
     padding-top: 150px;
     text-align: center;
+    color: $color-1;
+    display: flex;
+    flex-direction: column;
+    h1{
+        height: 263px;
+        font-size: 288px;
+        font-weight: 700; 
+    }
+    p{
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 51px;
+        letter-spacing: 0em;   
+        padding-top: 66px; 
+    }
+    .linkReturn{
+        padding-top: 182px;
+        padding-bottom: 20px;
+    }
+    .linkReturn > a {
+        color: $color-1;
+        border-bottom: 1px solid $color-1;
+        &:visited{
+            text-decoration: none;
+        }
+    }
 }
