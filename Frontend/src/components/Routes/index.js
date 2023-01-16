@@ -5,6 +5,7 @@ import About from "../../pages/About.js";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import Error404 from "../../pages/Error404"
+import Logement from "../../pages/Logement";
 
 const index = () => {
   return (
@@ -14,6 +15,7 @@ const index = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route exact path="/A-Propos" element={<About />} />
+          <Route exact path="/:id" element={<Logement />} />
           <Route path="*" element={<Error404 />} />
         </Routes>
         <Footer />

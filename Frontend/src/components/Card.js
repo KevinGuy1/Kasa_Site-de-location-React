@@ -1,10 +1,17 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-function Card({ key, id, title, cover, pictures, description, hostName, hostPicture, rating, location, equipments, tags }) {
+function Card({ id, title, cover, pictures, description, hostName, hostPicture, rating, location, equipments, tags }) {
+    let navigate = useNavigate();
+
+    const handleLink = () => {
+        navigate(`/${id}`)
+    }
+
     return (
-        <div className='card'>
-            <img src={cover} alt={title} style={{ width: "100px", height: "100px" }} />
-            <h1 style={{ color: "black", fontSize: "18px" }}>{title}</h1>
+        <div className='card' onClick={handleLink}>
+            <img src={cover} alt={title} />
+            <h1>{title}</h1>
         </div>
     );
 }

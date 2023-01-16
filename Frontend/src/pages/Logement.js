@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 function Logement() {
     return (
-        <div>
+        <div className='logement'>
             <p>Je suis la page Logement</p>
             <div>
                 <NavLink exact to="/">

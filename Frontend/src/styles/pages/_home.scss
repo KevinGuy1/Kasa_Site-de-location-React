@@ -1,6 +1,5 @@
 .home{
-    padding-top: 150px;
-    text-align: center;
+    padding-top: 171px;
     &__banner{
         max-width: 1240px;
         height: 223px;
@@ -16,6 +15,22 @@
             color: #FFFFFF;
             position: relative;
             top: -150px;
+            text-align: center;
         }   
+    }
+    .cards{
+        background: #F7F7F7;
+        width: 100%;
+        max-width: 1240px;
+        margin: auto;
+        border-radius: 25px;
+        margin-top: 43px;
+        &__grid{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-column-gap: 60px;
+            grid-row-gap: 50px;
+            padding: 50px;
+        }
     }
 }
