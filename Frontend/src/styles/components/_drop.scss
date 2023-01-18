@@ -4,7 +4,7 @@
     background: #FF6060;
     max-width: 1023px;
     border-radius: 5px;
-    margin: 33px;
+    margin-top: 33px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,14 +16,35 @@
         letter-spacing: 0em;
         color: white;
     }
-        .arrow{
-        width: 35px;
-        height: 100%;
-        object-fit: contain;
-        padding-right: 10px;
+    .arrow{
+    width: 35px;
+    height: 100%;
+    object-fit: contain;
+    padding-right: 10px;
+    }
+    .isActive {
+    transition: transform 500ms ease;
+    transform: rotateX(180deg);
+    }
+    &_content{
+        background: #F6F6F6;
+        border-radius: 5px;
+        max-width: 1023px;
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+        position: relative;
+        top:-10px;
+        z-index: -1;
+        p{
+            width: 90%;
+            text-align: left;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 34px;
+            letter-spacing: 0em;
+            color: #FF6060;
         }
-        .isActive {
-        transition: transform 500ms ease;
-        transform: rotateX(180deg);
-        }
+    }
+
 }

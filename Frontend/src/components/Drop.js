@@ -2,13 +2,12 @@ import React, { useState } from 'react';
 import Vector from '../images/vector.png'
 
 function Drop({ title, content }) {
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(true);
 
 
     function handleClick() {
         setIsOpen(!isOpen)
     }
-
 
 
     return (
@@ -17,9 +16,8 @@ function Drop({ title, content }) {
                 <h2>{title}</h2>
                 <img className={`arrow ${isOpen && "isActive"}`} src={Vector} alt="Fleche ouvert ou fermé" />
             </div>
-            <div>
-                {isOpen ? <p>{content}</p> : null}
-            </div>
+            {isOpen ? <div className='drop_content'><p>{content}</p></div> : null}
+
         </>
     );
 }
