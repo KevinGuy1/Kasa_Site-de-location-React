@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import Data from "../data.json"
 
 function Logement() {
@@ -11,12 +11,6 @@ function Logement() {
 
     return (
         <div className='logement'>
-            <p>Je suis la page Logement</p>
-            <div>
-                <NavLink exact to="/">
-                    Retour
-                </NavLink>
-            </div>
         </div>
     );
 }

@@ -1,23 +1,5 @@
 .home{
     padding-top: 171px;
-    &__banner{
-        max-width: 1240px;
-        height: 223px;
-        margin: auto;
-        img{
-            border-radius: 25px;
-            filter: brightness(50%);
-        }
-        p{
-            font-weight: 500;
-            font-size: 48px;
-            line-height: 68px;
-            color: #FFFFFF;
-            position: relative;
-            top: -150px;
-            text-align: center;
-        }   
-    }
     .cards{
         background: #F7F7F7;
         width: 100%;

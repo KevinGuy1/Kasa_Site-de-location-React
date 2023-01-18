@@ -1,15 +1,12 @@
 import React from 'react';
 import Card from "../components/Card"
-import bg from "../images/bg_banner.png"
+import Banner from "../components/Banner"
 import Data from "../data.json"
 
 function Home() {
     return (
         <div className='home'>
-            <div className='home__banner'>
-                <img src={bg} alt="banner"></img>
-                <p>Chez vous, partout et ailleurs</p>
-            </div>
+            <Banner />
             <section className='cards'>
                 <div className='cards__grid'>
                     {Data.map((item) => (
