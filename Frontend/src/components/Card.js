@@ -5,7 +5,7 @@ function Card({ id, title, cover, pictures, description, hostName, hostPicture, 
     let navigate = useNavigate();
 
     const handleLink = () => {
-        navigate(`/${id}`)
+        navigate(`/Logement/${id}`)
     }
 
     return (
