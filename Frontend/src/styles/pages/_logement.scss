@@ -1,5 +1,75 @@
 .logement{
     padding-top: 171px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    max-width: 1240px;
+    margin: auto;
+    &__head{
+        display: flex;
+        justify-content: space-between;
+        &__titles{
+            h1{
+                margin-top: 30px;
+                font-size: 36px;
+                font-weight: 500;
+                color:#FF6060;
+            }
+            p{
+                font-size: 18px;
+                font-weight: 500;
+                color:#FF6060;  
+            }
+            .tags{
+                display: flex;
+                justify-content: flex-start;
+            }
+            .tag{
+                font-size: 14px;
+                color: white;
+                background: #FF6060;
+                padding: 3px;
+                margin: 20px 10px 24px 0;
+                border-radius: 10px;
+                width: 115px;
+                text-align: center;
+                
+            }
+        }
+        &__user{
+            .host{
+                display: flex;
+                text-align: end;
+                margin-top: 30px;
+                height: 64px;
+                width: 150px;
+                .name{
+                    color:#FF6060;
+                    font-size: 18px;
+                    font-weight: 500;
+                    height: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    flex-wrap: wrap;
+
+                }
+                img{
+                    width: 64px;
+                    height: 64px;
+                    margin-left: 10px;
+                    background: #c4c4c4;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+    .drops{
+        display: flex;
+        justify-content: space-between;
+        max-width: 1240px;
+        .droplog{
+            width: 45%;
+        }
+    }
 }
