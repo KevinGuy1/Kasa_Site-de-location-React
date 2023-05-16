@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Kasa_Site-de-location-React/static/css/main.3bb14f71.css",
+    "main.js": "/Kasa_Site-de-location-React/static/js/main.337cdf70.js",
+    "static/media/bg_banner_about.png": "/Kasa_Site-de-location-React/static/media/bg_banner_about.00ffed0a838c49b964ca.png",
+    "static/media/bg_banner_home.png": "/Kasa_Site-de-location-React/static/media/bg_banner_home.efc1935eb81fc5e585f9.png",
+    "index.html": "/Kasa_Site-de-location-React/index.html",
+    "main.3bb14f71.css.map": "/Kasa_Site-de-location-React/static/css/main.3bb14f71.css.map",
+    "main.337cdf70.js.map": "/Kasa_Site-de-location-React/static/js/main.337cdf70.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3bb14f71.css",
+    "static/js/main.337cdf70.js"
+  ]
+}
